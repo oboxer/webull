@@ -81,7 +81,8 @@ class webull :
             pickle.dump(did, open(filename, 'wb'))
         return did
 
-    def _set_did(self, did, path):
+    @staticmethod
+    def set_did(did, path):
         '''
         If your starting to use this package after webull's new image verification for login, you'll
         need to login from a browser to get your did file in order to login through this api. You can
