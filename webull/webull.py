@@ -19,7 +19,7 @@ from . import endpoints
 
 class webull :
 
-    def __init__(self, did_dir, region_code=None) :
+    def __init__(self, did_dir='', region_code=None) :
         self._session = requests.session()
         self._headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0',
