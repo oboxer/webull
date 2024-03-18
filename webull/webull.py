@@ -1421,8 +1421,8 @@ class webull :
 ''' Paper support '''
 class paper_webull(webull):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, did_dir=''):
+        super().__init__(did_dir=did_dir)
 
     def get_account(self):
         ''' Get important details of paper account '''
